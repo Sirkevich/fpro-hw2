@@ -1,10 +1,11 @@
-let userNumber = prompt('Введите три числа через запятую');
+let userNumbers = prompt("Введите числа через запятую").split(",")
+let sum = 0;
 
-let firstUserNumber  = +userNumber.split(/,/)[0];
-let secondUserNumber  = +userNumber.split(/,/)[1];
-let thirdUserNumber  = +userNumber.split(/,/)[2];
+for (let i = 0; i < userNumbers.length; i++) {
+    sum = sum + parseFloat(userNumbers[i]);
+    result = sum / userNumbers.length;
+}
 
-let result = (firstUserNumber + secondUserNumber + thirdUserNumber) / 3;
+console.log('Среднее арифметическое = ', result.toFixed(1));
 
-console.log(result);
     
