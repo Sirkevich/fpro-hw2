@@ -4,4 +4,4 @@ let thirdUserNumber = +prompt('Enter your third number');
 
 let result = (firstUserNumber + secondUserNumber + thirdUserNumber) / 3;
 
-console.log(+result);
+console.log('Среднее арифметическое = '+result.toFixed(1));
